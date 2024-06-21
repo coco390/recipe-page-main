@@ -47,6 +47,7 @@ body {
     border-radius: 12px;
 }
 
+
 .recipe-information h1 {
     color: #312E2C;
     font-size: 2.5rem;
@@ -156,7 +157,8 @@ body {
 
 /* Horizontal Line Styling */
 hr {
-    color: #E3DDD7;
+    border: none;
+    border-top: 1px solid #E3DDD7;
 }
 
 /* Table Styling */
@@ -182,4 +184,51 @@ table td {
 
 table td:last-child {
     border-right: none;
+}
+
+/*Media Query*/
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        background-color: white;
+    }
+
+    .container-grid {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .recipe-information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .recipe-information h1 {
+        text-align: left;
+    }
+
+    .preparation-card {
+        max-width: 100%;
+        margin: 1rem 0;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .preparation-card h2{
+        font-size: 1.2rem;
+    }
+
+    .preparation-card ul {
+        padding-left: 1rem;
+    }
+
+    .preparation-card li {
+        margin-bottom: .5rem;
+    }
+
+    table {
+        margin-bottom: 3rem;
+    }
 }
