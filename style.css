@@ -25,49 +25,52 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3rem;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 /* Recipe Card Styling */
-.container-grid {
+.container {
     display: flex;
     flex-direction: column;
     padding: 2rem;
     background-color: white;
-    width: 736px;
-    height: 1707px;
-    border-radius: 24px;
+    max-width: 800px;
+    height: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
-.recipe-information img {
-    display: block;
-    margin: 0 auto 2rem;
-    width: 656px;
-    height: 300px;
-    border-radius: 12px;
+.recipe-image img{
+    border-radius: 1rem;
 }
-
 
 .recipe-information h1 {
     color: #312E2C;
     font-size: 2.5rem;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 1rem;
 }
 
 .recipe-information p {
     line-height: 1.75rem;
     font-size: 1rem;
+    margin-bottom: 2rem;
 }
 
 /* Preparation Card Styling */
 .preparation-card {
     background-color: #FFF7FB;
-    width: 656px;
-    height: 180px;
-    border-radius: 12px;
-    margin: 1rem 0 1rem 0;
-    padding: 0.5rem;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .preparation-card h2 {
@@ -188,40 +191,43 @@ table td:last-child {
 
 /*Media Query*/
 @media (max-width: 768px) {
-    body {
+ 
+    .container {
         margin: 0;
-        background-color: white;
+        padding: 0;
+        border-radius: 0;
     }
 
-    .container-grid {
-        width: 100%;
-        padding: 1rem;
-    }
-
-    .recipe-information img {
-        display: block;
-        margin: 0 auto 2rem;
-        width: 100%;
-        height: auto;
-        border-radius: 0px;
+    .recipe-image img{
+        padding: 0;
+        border-radius: 0;
+        margin-bottom: 2rem;
     }
 
     .recipe-information {
         display: flex;
         flex-direction: column;
-        align-items: center;
         text-align: left;
+        padding: 4rem;
+        margin-bottom: 0;
     }
 
     .recipe-information h1 {
+        font-size: 3.5rem;
         text-align: left;
+        line-height: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .recipe-information p{
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
 
     .preparation-card {
-        max-width: 100%;
-        margin: 1rem 0;
-        height: auto;
-        padding: 1rem;
+        margin: -2rem 4rem;
+        padding-left: 4rem;
+        width: 75%;
     }
 
     .preparation-card h2{
@@ -239,4 +245,23 @@ table td:last-child {
     table {
         margin-bottom: 3rem;
     }
+
+    .ingredients {
+        padding: 4rem;
+        margin-top: 0;
+        margin-bottom: -2rem;
+    }
+
+    .instructions {
+        padding: 4rem;
+        margin-top: -2rem;
+        margin-bottom: -2rem;
+    }
+
+    .nutrition-info {
+        padding: 4rem;
+        margin-top: -2rem;
+        margin-bottom: -2rem;
+    }
 }
+
