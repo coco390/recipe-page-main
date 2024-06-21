@@ -1,17 +1,24 @@
-/*Global Styles*/
-*{
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*Font Styling*/
+/* Font Styling */
 h1, h2 {
     font-family: "Young Serif", serif;
 }
 
-/*Body Styling*/
- body {
+h2 {
+    color: #854632;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* Body Styling */
+body {
+    color: #5F564D;
     font-family: "Outfit", sans-serif;
     background-color: #F3E5D7;
     display: flex;
@@ -19,13 +26,12 @@ h1, h2 {
     justify-content: center;
     align-items: center;
     margin: 3rem;
- }
+}
 
-/*Recipe Card Styling*/
-.container-grid{
+/* Recipe Card Styling */
+.container-grid {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 2rem;
     background-color: white;
     width: 736px;
@@ -39,34 +45,34 @@ h1, h2 {
     width: 656px;
     height: 300px;
     border-radius: 12px;
-    margin-bottom: 2rem;
 }
 
 .recipe-information h1 {
     color: #312E2C;
-    margin: auto;
     font-size: 2.5rem;
     font-weight: 400;
+    text-align: center;
 }
 
 .recipe-information p {
-    color: #5F564D;
     line-height: 1.75rem;
     font-size: 1rem;
 }
 
+/* Preparation Card Styling */
 .preparation-card {
     background-color: #FFF7FB;
     width: 656px;
     height: 180px;
     border-radius: 12px;
-    margin: 1rem;
-    margin-left: 0;
-    padding: .5rem;
+    margin: 1rem 0 1rem 0;
+    padding: 0.5rem;
 }
 
 .preparation-card h2 {
     color: #7A284E;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5rem;
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
@@ -76,11 +82,11 @@ h1, h2 {
 }
 
 .preparation-card li {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     padding-left: 1rem;
 }
 
-.preparation-card li::marker{
+.preparation-card, .ingredients li::marker {
     color: #7A284E;
 }
 
@@ -89,6 +95,91 @@ h1, h2 {
     color: #5F564D;
 }
 
+/* Ingredients Styling */
 .ingredients {
-    
+    padding-bottom: 2rem;
+}
+
+.ingredients h2 {
+    padding-bottom: 1rem;
+}
+
+.ingredients ul {
+    padding-left: 2rem;
+}
+
+.ingredients li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+/* Instructions Styling */
+.instructions {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.instructions h2 {
+    margin-bottom: 1rem;
+}
+
+.instructions ol {
+    padding-left: 2rem;
+}
+
+.instructions li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+.instructions li::marker {
+    color: #854632;
+}
+
+.title {
+    font-weight: 600;
+}
+
+/* Nutrition Info Styling */
+.nutrition-info {
+    margin-top: 2rem;
+}
+
+.nutrition-info h2 {
+    margin-bottom: 1rem;
+}
+
+.nutrition-info p {
+    margin-bottom: 1rem;
+}
+
+
+/* Horizontal Line Styling */
+hr {
+    color: #E3DDD7;
+}
+
+/* Table Styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.nutrition-title {
+    padding-left: 2rem;
+}
+
+.nutrition-value {
+    color: #854632;
+    font-weight: 700;
+    padding-left: 6rem;
+}
+
+table td {
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+}
+
+table td:last-child {
+    border-right: none;
 }
