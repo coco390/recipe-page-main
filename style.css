@@ -1,0 +1,94 @@
+/*Global Styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Font Styling*/
+h1, h2 {
+    font-family: "Young Serif", serif;
+}
+
+/*Body Styling*/
+ body {
+    font-family: "Outfit", sans-serif;
+    background-color: #F3E5D7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+ }
+
+/*Recipe Card Styling*/
+.container-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: white;
+    width: 736px;
+    height: 1707px;
+    border-radius: 24px;
+}
+
+.recipe-information img {
+    display: block;
+    margin: 0 auto 2rem;
+    width: 656px;
+    height: 300px;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.recipe-information h1 {
+    color: #312E2C;
+    margin: auto;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.recipe-information p {
+    color: #5F564D;
+    line-height: 1.75rem;
+    font-size: 1rem;
+}
+
+.preparation-card {
+    background-color: #FFF7FB;
+    width: 656px;
+    height: 180px;
+    border-radius: 12px;
+    margin: 1rem;
+    margin-left: 0;
+    padding: .5rem;
+}
+
+.preparation-card h2 {
+    color: #7A284E;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.preparation-card ul {
+    padding-left: 2.5rem;
+}
+
+.preparation-card li {
+    margin-bottom: .5rem;
+    padding-left: 1rem;
+}
+
+.preparation-card li::marker{
+    color: #7A284E;
+}
+
+.time-title {
+    font-weight: bold;
+    color: #5F564D;
+}
+
+.ingredients {
+    
+}
